@@ -1,0 +1,151 @@
+
+  body, html {
+    max-height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .email-app {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+ 
+  .header img {
+    width: 40px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header-text {
+    padding-left: 10px;
+    flex-grow: 1;
+    text-align: left; 
+  }
+  
+  .user-email {
+    padding-right: 10px;
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  .menu {
+    padding: 10px;
+    padding-left: 10px;
+  }
+
+  .menu-item {
+    padding: 1px;
+    flex-grow: 1;
+  }
+  .menuel {
+    width: 150px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .content {
+    flex: 1;
+    overflow: auto;
+    padding: 20px;
+    padding-left: 0px;
+  }
+  .email-item {
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .email-item img {
+    width: 16px;
+    padding-right: 10px;
+  }
+  .email-item:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  .incom  {
+    background-color: #f5b2b280;
+    border-radius: 5px;
+    width: 150px;
+  }
+  .email-item:hover {
+    background-color: #bebebe7b;
+  }
+  .send {
+    padding-right: 20px;
+    width: 140px;
+  }
+  .theme {
+    padding-right: 20px;
+  }
+  .email-item-content .message {
+    color: rgb(156, 156, 156);
+  }
+  .email-item-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+  }
+  .email-item-right {
+    margin-left: auto;
+    display: inline-block;
+  }
+  .at, .date {
+    margin-left: 6px;
+  }
+  .at {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  @media (max-width: 600px) {
+    .email-app {
+      flex-direction: row;
+    }
+    .email-item-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; 
+    }
+    .email-item-content span {
+      margin-bottom: 3px;
+    }
+    .menu {
+      flex: 0;
+      padding-left: 10px;
+      width: 50px;
+    }
+    .incom {
+      width: 35px;
+    }
+    .menu span {
+      display: none;
+    }
+  }
+  @media (max-width: 950px) and (min-width: 600px) {
+    .email-item-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; 
+    }
+    .email-item-content span {
+      margin-bottom: 3px;
+    }
+    .email-app {
+        flex-direction: row;
+    }
+    .menu {
+      flex: 0;
+      padding-left: 10px;
+      width: 150px;
+    }
+  }
